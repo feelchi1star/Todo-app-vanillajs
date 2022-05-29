@@ -48,7 +48,6 @@ input {
 .form-date {
   display: flex;
   gap: 10px;
-
   justify-content: center;
   align-items: center;
 }
@@ -56,16 +55,20 @@ input {
 .block {
   width: 100%;
 }
-.block > input {
-  height: 20px;
+
+/* Input Types */
+input[type="text"],
+input[type="time"],
+input[type="date"] {
+  background-color: var(--white-font);
+  border: #343a40;
+  color: #343a40;
+  height: 40px;
+  width: 100%;
+  border-radius: 8px;
+  padding-left: 10px;
 }
-/*Textarea Flex  */
-.form-group {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  justify-content: flex-start;
-}
+
 .display-1 {
   text-align: center;
   font-size: var(--head-font);
@@ -80,18 +83,21 @@ textarea {
   border: none;
   resize: none;
   border-radius: 10px;
-  padding-left: -10px;
+  text-align: left;
+  width: 100%;
+  height: 100px;
 }
 button {
   padding: 10px 10px;
   background: rgb(137, 139, 213);
   border: none;
   border-radius: 20px;
-  width: 20vh;
+  width: 100%;
+  margin-top: 10px;
 }
 button:hover {
-  background: rgb(50, 51, 68);
-  transition: 2s;
+  background: rgb(190, 190, 199);
+  transition: 1s;
 }
 
 /* Controls Alert Popup */
@@ -134,7 +140,9 @@ button:hover {
 }
 
 h3 {
-  text-align: center;
+  text-align: left;
+  text-transform: uppercase;
+  text-decoration: underline 6px;
 }
 .card-footer > a {
   text-decoration: none;
@@ -165,9 +173,9 @@ a {
   font-weight: 900;
 }
 .owner {
-  padding: 15px 0 0px 0;
-  bottom: 0;
-  position: relative;
+  padding: 3px 0 10px 0;
+  margin-top: 10px;
+  width: 100%;
   font-size: var(--sm);
   text-align: center;
 }
@@ -179,11 +187,35 @@ a {
   }
 
   .container-fluid {
-    margin: 1vh 14px 0px;
+    margin: 0 0 0px 0px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
     gap: 20px;
+    width: 100%;
   }
+  .container {
+    width: 80vw;
+    flex: 0;
+  }
+  .form-date {
+    flex-wrap: wrap;
+  }
+  .card-columns {
+    flex: 0;
+    justify-items: center;
+  }
+  #todoTask {
+    width: 90vw;
+  }
+  .owner {
+    font-size: 0.7em;
+    text-align: center;
+  }
+  .card-footer > div {
+  display: inline-flex;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
 }
