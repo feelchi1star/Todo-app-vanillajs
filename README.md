@@ -24,7 +24,9 @@
 
 ### Built With
 
--[HTML](https://html.org/) -[CSS](https://w3.org/) -[Javascript](https://javascript.com)
+- [HTML](https://html.org/)
+- [CSS](https://w3.org/)
+- [Javascript](https://javascript.com)
 
 ## Features
 
