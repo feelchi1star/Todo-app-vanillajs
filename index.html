@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pure Vanilla Javascript Todo App</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css.css" />
+  </head>
+
+  <body class="bg-dark text-white">
+    <h1 class="display-1">Todo List App</h1>
+
+    <p class="small">Manage your Daily Task Today and Aviod Procastinations</p>
+    <div class="container-fluid">
+      <div class="container">
+        <form id="task-form" autocomplete="off">
+          <div class="form-g">
+            <label for="text">Task Title:</label>
+            <input
+              class="form-control"
+              type="text"
+              name="task"
+              placeholder="Enter your daily Tasks"
+              id="task"
+            />
+          </div>
+
+          <div class="form-date">
+            <div class="block">
+              <label for="time">Date:</label>
+              <input
+                type="date"
+                name="time"
+                placeholder="Enter the Time to complete Task"
+                id="date"
+              />
+            </div>
+
+            <div class="block">
+              <label for="time">Time:</label>
+              <input type="time" id="time" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="comment">Description:</label>
+            <textarea
+              class="form-control small"
+              rows="5"
+              placeholder="How to accomplish the Task..."
+              id="comment"
+            >
+            </textarea>
+            <button class="btn btn-block btn-success mt-2">Add Task</button>
+          </div>
+        </form>
+      </div>
+      <div id="todoTask" class="card-columns">
+        <h3>Task List</h3>
+      </div>
+    </div>
+    <div class="owner">
+      &copy;
+      <a
+        href="http://www.github.com/feelchi1star"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="feelchi"
+      >
+        Feelchi1star Inc. 2022</a
+      >
+      Design by Felix Chinonso Emmanuel
+    </div>
+  </body>
+  <script src="./js.js"></script>
+</html>

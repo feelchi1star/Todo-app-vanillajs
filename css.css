@@ -1,0 +1,189 @@
+/* Remove Default Padding and margin from the browser */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Css Variables  Making changes to any of the Variables will apply to the site*/
+:root {
+  --dark-bg: #343a40;
+  --white-font: #fff;
+  --warning-color: #c51906;
+  --head-font: 48px;
+  --sm: 1em;
+  --success: rgb(21, 223, 21);
+  --task-bg: rgba(33, 25, 25, 0.83);
+  --font-family: "Poppins";
+}
+/* Body Tag */
+body {
+  background-color: var(--dark-bg);
+  color: var(--white-font);
+}
+/* Container Fluid Class */
+.container-fluid {
+  margin: 15vh 30px 0px;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  gap: 50px;
+  font-family: var(--font-family);
+}
+/* Adding of flex size feature to container class */
+.container {
+  flex: 2;
+}
+/* MAkes  label to display vertically */
+label {
+  display: block;
+  margin-top: 8px;
+}
+/* input flied margins */
+input {
+  margin-top: 10px;
+  width: 100%;
+}
+/*  */
+.form-date {
+  display: flex;
+  gap: 10px;
+
+  justify-content: center;
+  align-items: center;
+}
+/*Date and time input controls  */
+.block {
+  width: 100%;
+}
+.block > input {
+  height: 20px;
+}
+/*Textarea Flex  */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: flex-start;
+}
+.display-1 {
+  text-align: center;
+  font-size: var(--head-font);
+  margin: 10px 10px;
+}
+.small {
+  font-size: var(--sm);
+  line-height: 20px;
+  text-align: center;
+}
+textarea {
+  border: none;
+  resize: none;
+  border-radius: 10px;
+  padding-left: -10px;
+}
+button {
+  padding: 10px 10px;
+  background: rgb(137, 139, 213);
+  border: none;
+  border-radius: 20px;
+  width: 20vh;
+}
+button:hover {
+  background: rgb(50, 51, 68);
+  transition: 2s;
+}
+
+/* Controls Alert Popup */
+.danger {
+  background-color: var(--warning-color);
+}
+.success {
+  background-color: var(--success);
+}
+.alert {
+  color: var(--white-font);
+  width: 100%;
+  font-size: 16px;
+  line-height: 13px;
+  padding: 10px;
+  text-transform: capitalize;
+  border-radius: 4px;
+}
+/* End of Alert Popup */
+.custom-style {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: relative;
+}
+.card {
+  border-radius: 5px;
+  margin-top: 17px;
+  background-color: var(--task-bg);
+
+  padding: 15px;
+}
+.card > div {
+  margin-bottom: 12px;
+  position: relative;
+}
+.card-columns {
+  flex: 2;
+}
+
+h3 {
+  text-align: center;
+}
+.card-footer > a {
+  text-decoration: none;
+  color: var(--white-font);
+  background-color: var(--warning-color);
+  padding: 10px;
+  border-radius: 4px;
+  margin-top: 30px;
+  float: right;
+}
+.card-footer > div {
+  display: inline-flex;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.card-body {
+  width: auto;
+}
+.card-time > div {
+  padding-left: 3px;
+}
+#todoTask {
+  font-family: var(--font-family);
+}
+a {
+  text-decoration: none;
+  color: var(--white-font);
+  font-weight: 900;
+}
+.owner {
+  padding: 15px 0 0px 0;
+  bottom: 0;
+  position: relative;
+  font-size: var(--sm);
+  text-align: center;
+}
+/* Make It Responsive in mobiles  */
+@media (max-width: 600px) {
+  :root {
+    --head-font: 2em;
+    --sm: 0.8em;
+  }
+
+  .container-fluid {
+    margin: 1vh 14px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 20px;
+  }
+}
