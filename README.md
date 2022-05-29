@@ -3,7 +3,7 @@
 <h1 align="center">TODO LIST APP</h1>
 
 <div align="center">
-   Learn by Bluiding Projects
+<h2> Learn by Bluiding Projects</h2>
 </div>
 
 <div align="center">
@@ -11,10 +11,8 @@
     <a href="https://feel-todoapp-vanillajs.netlify.app/">
       Demo
     </a>
-
-This Todo App Was Created in HTML, CSS and Pure Vanilla Javascript. No React or Vue Library. This Project can be reviewed by Beginner Whom wants to enhance their knowledge about Object oriented Programming OOP. HAPPY CODING!
-
-## Overview
+    </h3>
+</div>
 
 ## Desktop View
 
@@ -26,9 +24,7 @@ This Todo App Was Created in HTML, CSS and Pure Vanilla Javascript. No React or 
 
 ### Built With
 
-- [HTML](https://html.org/)
-- [CSS](https://w3.org/)
-- [Javascript](https://javascript.com)
+-[HTML](https://html.org/) -[CSS](https://w3.org/) -[Javascript](https://javascript.com)
 
 ## Features
 
