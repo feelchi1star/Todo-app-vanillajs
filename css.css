@@ -7,13 +7,15 @@
 
 /* Css Variables  Making changes to any of the Variables will apply to the site*/
 :root {
-  --dark-bg: #343a40;
+  --dark-bg: #059862;
+  /* #343a40 */
   --white-font: #fff;
   --warning-color: #c51906;
   --head-font: 48px;
   --sm: 1em;
   --success: rgb(21, 223, 21);
-  --task-bg: rgba(33, 25, 25, 0.83);
+  /* black */
+  --task-bg: var(--success);
   --font-family: "Poppins";
 }
 /* Body Tag */
@@ -89,7 +91,7 @@ textarea {
 }
 button {
   padding: 10px 10px;
-  background: rgb(137, 139, 213);
+  background: var(--success);
   border: none;
   border-radius: 20px;
   width: 100%;
@@ -214,8 +216,8 @@ a {
     text-align: center;
   }
   .card-footer > div {
-  display: inline-flex;
-  padding-top: 5px;
-  padding-bottom: 5px;
-}
+    display: inline-flex;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
 }
